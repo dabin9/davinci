@@ -1,0 +1,110 @@
+/*
+  가장중요한 조건
+  가로스롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1400 작은pc 사이즈,작은 모니터  */
+
+@media screen and (max-width: 1300px) {
+    /* header */
+    /* main */
+
+    
+    /* footer */
+  }
+  
+  
+  /*
+  테블릿
+  중대적인 레이아웃 변화
+  폰트사이즈 줄여준다 아래와같은룰로
+  */
+  @media screen and (max-width: 1024px) {
+    .width.on{
+        letter-spacing: 30px;
+    }
+  }
+
+  /*
+   모바일
+   *대대적 레이아웃 변화
+   사이드 패딩 15~20
+   대폰트 font-size: 38~28
+   중폰트 18~28
+   소폰트 12~ 16
+   웬만한 레이아웃은 1줄 아니면 2줄
+   320으로 가야함
+  */
+  @media screen and (max-width: 768px) {
+      .header_container .logo{
+          font-size: 12px;
+      }
+      h2{
+          font-size: 28px;
+      }
+      p{
+          font-size: 12px !important;
+      }
+      .main_vis .main_container .text_area span {
+          font-size: 12px;
+      }
+      .main_vis .main_container .text_area h2, .main_vis .main_container .text_area strong{
+          font-size: 28px;
+      }
+      .menu{
+          width: 28px;
+      }
+      .page_control i{
+          width: 50px;
+      }
+      .sub_menu .sub_inner li a{
+          font-size: 16px;
+      }
+      .main_vis .main_container .text_area {
+margin-left: 5vw;
+margin-right: 5vw;
+  }
+  .sub_menu .sub_inner{
+          flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu.open {
+        margin-left: auto;
+    }
+  }
+
+
+@media screen and (max-width: 400px) {
+.main_vis .main_container .text_area {
+margin-left: 2vw;
+  }
+ .main_vis .main_container .text_area h2, .main_vis .main_container .text_area strong{
+          font-size: 25px;
+      }
+      h2{
+          font-size: 25px;
+      }
+      .main_vis .main_container .text_area p{
+          padding-right: 30px;
+      }
+      .width.on{
+        letter-spacing: 15px;
+    }
+   
+      
+
+
+
+
+
+
+
+
+
+
+}

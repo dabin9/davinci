@@ -1,0 +1,16 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    clear:both;
+    display: block;
+}
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}

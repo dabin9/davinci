@@ -1,0 +1,178 @@
+*{
+  /* font-family: 'Noto Sans', sans-serif; */
+font-family: 'Noto Sans KR', sans-serif;
+color: #fff;
+}
+
+
+
+.main_vis{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.main_vis .main_container{
+    display: flex;
+    width: 300vw;
+    transition: transform .5s;
+}
+.main_vis .main_container .slide_box{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bg{
+  width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+transform: scale(1.1) rotate(2deg);
+transition: transform 2s;
+}
+.bg.on{
+   transform: scale(1) rotate(0deg);
+}
+
+.bg_black{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ transition: all 2s ease 0.1s;
+ opacity: 0;
+}
+.bg_black.on{
+  background-image: radial-gradient(circle at top left, rgba(0, 0, 0, 0) 17%, rgba(0, 0, 0, 0.9) 100%);
+  opacity: 1;
+}
+.trans01{    
+  transform: translate3d(-29px, 32px, 10px);
+    transition: all 0.8s ease-in-out .1s;
+  }
+.trans02{
+  transform: translate3d(-29px, 32px, 10px);
+    transition: all 2s ease-in-out .1s;
+}
+.trans03{
+  transform: translate3d(-29px, 32px, 10px);
+  transition: all 1s ease-in-out .1s;
+}
+.trans04{
+      transform: translate3d(-29px, 32px, 10px);
+    transition: all 1.2s ease-in-out .1s;
+}
+
+.trans01.on{
+  transform: translate3d(10px, 10px, 10px);
+}
+.trans02.on{
+  transform: translate3d(10px, 10px, 10px);
+}
+.trans03.on{
+  transform: translate3d(10px, 10px, 10px);
+}
+.trans04.on{
+  transform: translate3d(10px, 10px, 10px);
+}
+.width{
+ transition: all 2s ease-in-out .5s;
+}
+.width.on{
+  letter-spacing: 50px;
+}
+.main01{
+    background: url(../images/dabin.jpg) no-repeat right;
+    background-size: cover;
+   
+}
+.main02 .video_bg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main03 .video_bg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main04{
+    background: url(../images/main/aa.png) no-repeat bottom;
+    background-size: cover;
+
+}
+
+
+.main_vis .main_container .text_area{
+  display: block;
+  margin-top:25vh;
+  margin-left: 17vw;
+  z-index: 2;
+  position: relative;
+}
+.main_vis .main_container .text_area span{
+  font-size: 18px;
+}
+.boldche{
+  font-weight: 800;
+}
+.main_vis .main_container .text_area h2, .main_vis .main_container .text_area strong{
+  font-size: 50px;
+    display: block;
+    line-height: 1.6;
+    font-weight: 700;
+    padding: 30px 0 30px;
+}
+
+.main_vis .main_container .text_area p{
+      font-size: 18px;
+    line-height: 1.7;
+    color: #fff;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.btnGo{}
+.btnGo a{
+  display: block;
+  padding: 15px;
+  position: relative;
+  min-width: 135px;
+}
+.btnGo .siteGo{
+    font-size: 14px;
+    font-weight: 500;
+}
+.btnGo a::before, .btnGo a::after{
+  content: "";
+  clear: both;
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: all .5s;
+}
+.btnGo a::before{
+  width: 100%;
+  right: 0;
+  background: #fff;
+
+}
+.btnGo a::after{
+  width: 0;
+  left: 0;
+  background: #3c5ef3;
+  transition-delay: 200ms;
+
+}
+.btnGo a:hover::before{
+  width: 0;
+  right: 0;
+}
+.btnGo a:hover::after{
+  width: 100%;
+  left: 0;
+}
+
+
